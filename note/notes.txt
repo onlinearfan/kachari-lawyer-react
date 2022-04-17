@@ -1,0 +1,18 @@
+*)individual name er person er service related website make krte hobe,
+*) uniq name should be given
+*)home page e = simple nav,header,banner(banner slider or static),service,footer,
+*)service = img,name,desc,price,
+*)service single e btn thakbe click krle checkout page e niye jabe,(private route er diye- log in na thakle duka jabe na)
+*)protected route e reload dile same page e thakbe,
+*)email pass word base auth hobe, and ekta google,facebook or github er ekta,
+*)log in thakle log out/sign out button dekhabo,
+*)blog name ekta page hobe sekhane 3ta question ans dibo,
+*)about page = picture,name,goad,
+*)404 page create krbo ,
+*)9ta commit minimum krbo,
+
+BONUS :
+lorem ipsu don't use, readme te website features describe,(name,link,bullet,ki ki use,)
+*)home page must responsive,
+*)error for email pass 
+*)add link reset pass toast
