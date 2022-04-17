@@ -1,8 +1,52 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { useNavigate } from 'react-router-dom'
+import toast from 'react-hot-toast';
+import {
+    signInWithEmailAndPassword,
+    GoogleAuthProvider,
+    signInWithPopup,
+} from "firebase/auth";
 
 const LoginPage = () => {
         const navigate = useNavigate();
+        const [email, setEmail] = useState({ value: "", error: "" });
+        const [password, setPassword] = useState({ value: "", error: "" });
+
+        //Google Auth 
+        const googleAuth = () => {
+            signInWithPopup(auth, provider)
+              .then((result) => {
+                const user = result.user;
+                // ...
+                console.log(user);
+                toast.success("Sign In Successfully", { id: "signInGoogle" });
+                navigate("/");
+              })
+              .catch((error) => {
+                // Handle Errors here.
+                console.error(error);
+              });
+          };
+
+          //handle email 
+          const handleEmail = (event) => {
+            const emailInput = event.target.value;
+        
+            if (/\S+@\S+\.\S+/.test(emailInput)) {
+              setEmail({ value: emailInput, error: "" });
+            } else {
+              setEmail({ value: "", error: "Please Provide a valid Email" });
+            }
+          };
+        
+        //handle password
+          const handlePassword = (event) => {
+            const passwordInput = event.target.value;
+        
+            setPassword({ value: passwordInput, error: "" });
+          };
+
+        //handle login form 
         const handleLogin = (e) =>{
             e.preventDefault();
         }
@@ -42,7 +86,7 @@ const LoginPage = () => {
                                                 <span>or</span>
                                             </div>
                                             <div className='third-party-auth'>
-                                                <button className='google btn-block'><i class="fa fa-google" aria-hidden="true"></i> Continue With Google</button>
+                                                <button onClick={googleAuth} className='google btn-block'><i class="fa fa-google" aria-hidden="true"></i> Continue With Google</button>
                                                 <button className='github btn-block'><i class="fa fa-github" aria-hidden="true"></i> Continue With Github</button>
                                             </div>
 		                            </div>

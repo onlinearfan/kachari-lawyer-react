@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import { Toaster } from 'react-hot-toast';
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Checkout from './pages/Checkout/Checkout'
@@ -15,6 +16,7 @@ const App = () => {
   return (
     <>
     <Header/>
+    <Toaster/>
       <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="about" element={<About/>}/>

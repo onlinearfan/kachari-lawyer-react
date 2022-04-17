@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import toast from 'react-hot-toast';
 import {
     getAuth,
     createUserWithEmailAndPassword,
@@ -94,16 +95,16 @@ const SignUpPage = () => {
             createUserWithEmailAndPassword(auth, email.value, password.value)
               .then((userCredential) => {
                 const user = userCredential.user;
-                // toast.success("Account created", { id: "created" });
+                toast.success("Account created", { id: "created" });
                 //after sign up redirect to home page 
                 navigate("/");
               })
               .catch((error) => {
                 const errorMessage = error.message;
                 if (errorMessage.includes("already-in-use")) {
-                //   toast.error("Email already in use", { id: "error" });
+                  toast.error("Email already in use", { id: "error" });
                 } else {
-                //   toast.error(errorMessage, { id: "error" });
+                  toast.error(errorMessage, { id: "error" });
                 }
               });
           }
@@ -117,6 +118,7 @@ const SignUpPage = () => {
      const githubAuth = ()=>{
          
      }
+
 
     return (
         <div className="testimonial-and-quote-area pt-100 pb-80">
