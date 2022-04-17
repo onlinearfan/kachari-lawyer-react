@@ -31,7 +31,13 @@ const LoginPage = () => {
 		                                <div className="col-md-12 col-lg-12">
 		                                    <div className="request-quate-form-style">
                                             <button type="submit" className="btn">Log In</button>
-                                            <p>New To Kachari? <button className='new-account' onClick={()=>navigate('/signup')}>Create New Account</button></p>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </form>
+                                <div className="third-party-auth">
+                                <div className="col-md-12 col-lg-12">
+                                <p>New To Kachari? <button className='new-account' onClick={()=>navigate('/signup')}>Create New Account</button></p>
                                             <div className="or text-center">
                                                 <span>or</span>
                                             </div>
@@ -39,10 +45,8 @@ const LoginPage = () => {
                                                 <button className='google btn-block'><i class="fa fa-google" aria-hidden="true"></i> Continue With Google</button>
                                                 <button className='github btn-block'><i class="fa fa-github" aria-hidden="true"></i> Continue With Github</button>
                                             </div>
-		                                    </div>
-		                                </div>
 		                            </div>
-		                        </form>
+                                </div>
 		                    </div>
 		                </div>
 		            </div>
