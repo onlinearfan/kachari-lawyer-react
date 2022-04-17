@@ -7,7 +7,9 @@ import Checkout from './pages/Checkout/Checkout'
 import BlogPage from './pages/BlogPage/BlogPage'
 import LoginPage from './pages/LoginPage/LoginPage'
 import SignUpPage from './pages/SignUpPage/SignUpPage'
+import NotFound from './pages/NotFound/NotFound';
 import Header from './components/Header/Header'
+
 import './App.css'
 // import './css/responsive.css'
 
@@ -24,6 +26,7 @@ const App = () => {
       <Route path="checkout" element={<Checkout/>}/>
       <Route path="login" element={<LoginPage/>}/>
       <Route path="signup" element={<SignUpPage/>}/>
+     
     </Routes>
     </>
   )

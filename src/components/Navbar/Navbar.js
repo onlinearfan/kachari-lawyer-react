@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useLayoutEffect} from 'react'
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import auth from '../../Firebase/Firebase.init';
 import { NavLink,useNavigate } from 'react-router-dom'
@@ -9,7 +9,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     console.log(currentUser);
     //current user set up
-    useEffect(() => {
+    useLayoutEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
           if (user) {
             setCurrentUser(user);
@@ -40,7 +40,7 @@ const Navbar = () => {
 		        <li><NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="/">HOME</NavLink></li>
 		        <li><NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="about">About</NavLink></li>
 		        <li><NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="blog">Blog</NavLink></li>
-                {currentUser?.email ? (
+                {currentUser?.uid ? (
           <button onClick={handleLogout} className='logout-button'>
             Logout
           </button>

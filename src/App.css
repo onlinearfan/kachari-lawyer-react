@@ -806,9 +806,6 @@ Common Style CSS
 	margin-left: 8px;
 }
 
-.active-link{
-	color:#b99044!important;
-}
 
 /*----------------------------------
        2.2 Header Bottom CSS
@@ -2871,4 +2868,8 @@ h4.small-title {
 }
 .contact-form p.form-messege.error {
   color: #EF785A;
+}
+
+.active-link{
+	color:#b99044!important;
 }

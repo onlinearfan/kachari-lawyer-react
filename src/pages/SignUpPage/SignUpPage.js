@@ -4,6 +4,7 @@ import {
     createUserWithEmailAndPassword,
     GoogleAuthProvider,
     signInWithPopup,
+    sendEmailVerification
 } from "firebase/auth";
 import auth from "../../Firebase/Firebase.init";
 
@@ -74,6 +75,8 @@ const SignUpPage = () => {
         }
       };
 
+      
+
 
     //handle singup form
     const handleSignUp = (e) => {
@@ -98,6 +101,7 @@ const SignUpPage = () => {
                 toast.success("Account created", { id: "created" });
                 //after sign up redirect to home page 
                 navigate("/");
+                verifiedEmail();
               })
               .catch((error) => {
                 const errorMessage = error.message;
@@ -119,6 +123,14 @@ const SignUpPage = () => {
          
      }
 
+     //Verification Email Sending
+     const verifiedEmail = ()=>{
+        sendEmailVerification(auth.currentUser)
+        .then(() => {
+          console.log(auth.currentUser);
+        });
+     }
+
 
     return (
         <div className="testimonial-and-quote-area pt-100 pb-80">
@@ -134,19 +146,19 @@ const SignUpPage = () => {
 		                            <div className="row">
 		                                <div className="col-12">
 		                                    <div className="request-quate-form-style mb-30">
-		                                        <input onBlur={handleEmail} name="email" id="email" placeholder="Email" type="email"/>
+		                                        <input required onBlur={handleEmail} name="email" id="email" placeholder="Email" type="email"/>
                                                 {email.error && (<span className="error">{email.error}</span>)}
 		                                    </div>
 		                                </div>
 		                                <div className="col-12">
 		                                    <div className="request-quate-form-style mb-30">
-		                                        <input onBlur={handlePassword} name="password" id="password" placeholder="Password" type="password"/>
+		                                        <input required onBlur={handlePassword} name="password" id="password" placeholder="Password" type="password"/>
                                                 {password.error && (<span className="error">{password.error}</span>)}
 		                                    </div>
 		                                </div>
 		                                <div className="col-12">
 		                                    <div className="request-quate-form-style mb-30">
-		                                        <input onBlur={handleConfirmPassword} name="confirmPassword" id='confirmPassword' placeholder="Confirm Password" type="password"/>
+		                                        <input required onBlur={handleConfirmPassword} name="confirmPassword" id='confirmPassword' placeholder="Confirm Password" type="password"/>
                                                 {passwordConfirmation.error && (<span className="error">{passwordConfirmation.error}</span>)}
 		                                    </div>
 		                                </div>

@@ -5,6 +5,7 @@ import {
     signInWithEmailAndPassword,
     GoogleAuthProvider,
     signInWithPopup,
+    sendPasswordResetEmail,
 } from "firebase/auth";
 import auth from "../../Firebase/Firebase.init";
 
@@ -80,6 +81,18 @@ const LoginPage = () => {
                 });
             }
           };
+
+    const handleResetPass = ()=>{
+        sendPasswordResetEmail(auth, email.value)
+        .then(() => { 
+        console.log('reset password');
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+  });
+    }
     return (
         <div className="testimonial-and-quote-area pt-100 pb-80">
 		    <div className="container">
@@ -94,13 +107,13 @@ const LoginPage = () => {
 		                            <div className="row">
                                     <div className="col-12">
 		                                    <div className="request-quate-form-style mb-30">
-		                                        <input onBlur={handleEmail} name="email" id="email" placeholder="Email" type="email"/>
+		                                        <input required onBlur={handleEmail} name="email" id="email" placeholder="Email" type="email"/>
                                                 {email.error && (<span className="error">{email.error}</span>)}
 		                                    </div>
 		                                </div>
 		                                <div className="col-12">
 		                                    <div className="request-quate-form-style mb-30">
-		                                        <input onBlur={handlePassword} name="password" id="password" placeholder="Password" type="password"/>
+		                                        <input required onBlur={handlePassword} name="password" id="password" placeholder="Password" type="password"/>
                                                 {password.error && (<span className="error">{password.error}</span>)}
 		                                    </div>
 		                                </div>
@@ -111,6 +124,7 @@ const LoginPage = () => {
 		                                </div>
 		                            </div>
 		                        </form>
+                                <button onClick={handleResetPass} type="submit" className="btn">Forget Password</button>
                                 <div className="third-party-auth">
                                 <div className="col-md-12 col-lg-12">
                                 <p>New To Kachari? <button className='new-account' onClick={()=>navigate('/signup')}>Create New Account</button></p>
@@ -118,8 +132,8 @@ const LoginPage = () => {
                                                 <span>or</span>
                                             </div>
                                             <div className='third-party-auth'>
-                                                <button onClick={googleAuth} className='google btn-block'><i class="fa fa-google" aria-hidden="true"></i> Continue With Google</button>
-                                                <button className='github btn-block'><i class="fa fa-github" aria-hidden="true"></i> Continue With Github</button>
+                                                <button onClick={googleAuth} className='google btn-block'><i className="fa fa-google" aria-hidden="true"></i> Continue With Google</button>
+                                                <button className='github btn-block'><i className="fa fa-github" aria-hidden="true"></i> Continue With Github</button>
                                             </div>
 		                            </div>
                                 </div>
