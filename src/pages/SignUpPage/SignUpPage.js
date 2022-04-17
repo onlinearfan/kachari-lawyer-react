@@ -1,7 +1,6 @@
 import React,{useState} from "react";
 import toast from 'react-hot-toast';
 import {
-    getAuth,
     createUserWithEmailAndPassword,
     GoogleAuthProvider,
     signInWithPopup,
@@ -29,6 +28,7 @@ const SignUpPage = () => {
         const user = result.user;
         // ...
         console.log(user);
+        toast.success("Account created", { id: "created" });
         navigate("/");
       })
       .catch((error) => {

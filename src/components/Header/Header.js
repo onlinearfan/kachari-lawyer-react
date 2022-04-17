@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Navbar from '../Navbar/Navbar'
 
 const Header = () => {
     return (
@@ -57,15 +58,7 @@ const Header = () => {
 		                    {/* <!--Header Menu Start--> */}
 		                    <div className="col-md-9">
 		                        <div className="header-menu-area text-right">
-		                            <nav>
-		                                <ul className="main-menu">
-		                                    <li><NavLink to="/">HOME</NavLink></li>
-		                                    <li><NavLink to="about">About</NavLink></li>
-		                                    <li><NavLink to="blog">Blog</NavLink></li>
-		                                    <li><NavLink to="login">Login</NavLink></li>
-		                                    <li><NavLink to="signup">signup</NavLink></li>
-		                                </ul>
-		                            </nav>
+		                            <Navbar/>
 		                        </div>
 		                    </div>
 		                    {/* <!--Header Menu End--> */}
