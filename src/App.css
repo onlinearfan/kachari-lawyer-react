@@ -805,6 +805,11 @@ Common Style CSS
 	text-transform: none;
 	margin-left: 8px;
 }
+
+.active-link{
+	color:#b99044!important;
+}
+
 /*----------------------------------
        2.2 Header Bottom CSS
 ------------------------------------*/

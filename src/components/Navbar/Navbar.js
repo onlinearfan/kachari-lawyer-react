@@ -37,22 +37,18 @@ const Navbar = () => {
     return (
         <nav>
 		    <ul className="main-menu">
-		        <li><NavLink to="/">HOME</NavLink></li>
-		        <li><NavLink to="about">About</NavLink></li>
-		        <li><NavLink to="blog">Blog</NavLink></li>
+		        <li><NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="/">HOME</NavLink></li>
+		        <li><NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="about">About</NavLink></li>
+		        <li><NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="blog">Blog</NavLink></li>
                 {currentUser?.email ? (
           <button onClick={handleLogout} className='logout-button'>
             Logout
           </button>
         ) : (
-          <NavLink
-            // className={({ isActive }) => (isActive ? "active-link" : "link")}
-            to='/login'
-          >
+            <button onClick={()=>navigate('/login')} className='logout-button'>
             Login
-          </NavLink>
+          </button> 
         )}
-		        <li><NavLink to="signup">signup</NavLink></li>
 		    </ul>
 		</nav>
     )
