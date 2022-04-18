@@ -14,7 +14,7 @@ const Footer = () => {
                                 {/* <!--Single Footer Widget Start--> */}
 		                        <div className="single-footer-widget mb-30">
                                     <NavLink className="footer-logo" to="/"><img src="img/logo/logo-footer.png" alt=""/></NavLink>
-		                            <p>Lawyer boluptatum atque corrupe uas molestias cepturi sint  eca itate non nt in culpa modi tempora incidunt</p>
+		                            <p>I solve your problems during times of hardship and pain that require some great pleasure. In order to come to the least, any one of us undertakes any physical exercise</p>
 		                        </div>
 		                        {/* <!--Single Footer Widget End--> */}
 		                    </div>

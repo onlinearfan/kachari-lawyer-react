@@ -1,15 +1,13 @@
 import React from "react";
 
-const CardBox = () => {
+const CardBox = ({cardData}) => {
     return (
         <div className="col-md-6">
             {/* <!--Single Feature Start--> */}
             <div className="single-feature">
-                <h2>Fight for Justice</h2>
+                <h2>{cardData.title}</h2>
                 <p>
-                    Fight for justice is our main goal voluptatum it atque
-                    corrupti quos es et quas molestias pturi sint occaeca tate
-                    non{" "}
+                   {cardData.cardDesc}
                 </p>
             </div>
             {/* <!--Single Feature End--> */}

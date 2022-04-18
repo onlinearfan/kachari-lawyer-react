@@ -1,5 +1,5 @@
 const WhyChooseMeData = {
-    title:'Why you Choose me?',
+    title:'',
     desc:'Lawyer soothes and corrupts whomsoever and what troubles they will receive, and they do not see what troubles they will receive',
     cardData:[
         {
