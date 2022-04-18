@@ -1,4 +1,4 @@
-    <h1>Project Name : Kachari - A Lawyer Service based Website</h1>
+<h1>Project Name : Kachari - A Lawyer Service based Website</h1>
     <h3>Project Link : <a href="https://kachari-lawyer.web.app/">Click For Live View</a></h3>
     <hr>
     <ol>
@@ -12,8 +12,7 @@
         <li><b>Fully Responsive by Bootstrap Framwork</b></li>
         <li><b>Clean and easy to read code</b></li>
     </ol>
-
-    <ol>
+<ol>
         <h2>Technologies Used for make this project are:</h2>
         <li><b>Html</b></li>
         <li><b>CSS</b></li>
@@ -21,7 +20,5 @@
         <li><b>ReactJS</b></li>
         <li><b>Bootstrap</b></li>
         <li><b>Firebase Authentication</b></li>
-        <li><b>React Hot Toast</b></li>
-        
-        
-    </ol>
+        <li><b>React Hot Toast</b></li>    
+</ol>
