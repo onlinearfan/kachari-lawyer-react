@@ -55,7 +55,7 @@ const Checkout = () => {
 		                                </div>
 		                                <div className="col-md-12 col-lg-12">
 		                                    <div className="request-quate-form-style">
-		                                        <button onClick={handleCheckout} type="submit" className="default-btn">Order<i className="icofont icofont-long-arrow-right"></i></button>
+		                                        <button onClick={handleCheckout} type="submit" className="my-btn">Order<i className="icofont icofont-long-arrow-right"></i></button>
 		                                    </div>
 											{error && <span>Please Give your details properly for a successful order.</span>}
 		                                </div>
@@ -73,7 +73,7 @@ const Checkout = () => {
                                        <img src="img/icon/icon1.png" alt=""/>
                                         <h4>Ordering Service Details</h4>
                                         <h2>{checkoutProduct?.title}</h2>
-										<span>Price: {checkoutProduct?.price}</span>
+										<span className='price'>Price: {checkoutProduct?.price}</span>
                                         <p>{checkoutProduct?.desc}</p>
                                     </div>
                                     {/* <!--Section Title End-->  */}

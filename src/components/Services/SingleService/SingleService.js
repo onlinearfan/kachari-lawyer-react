@@ -19,9 +19,9 @@ const SingleService = ({ singleServiceData }) => {
                         <a href="single-service.html">{title}</a>
                     </h4>
                     <p>{desc}</p>
-                    <span>{price}</span>
+                    <span className="price">{price}</span>
                     <br></br>
-                    <button
+                    <button className="my-btn"
                         onClick={() => {
                             BuyNow(id);
                         }}

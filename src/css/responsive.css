@@ -1680,6 +1680,10 @@
     .contact-form {
         margin-top: 50px;
     }
+
+    .header-logo a {
+        text-align: center;
+      }
     } 
     /* Large Mobile :480px. */
     @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -1735,6 +1739,10 @@
         width: 280px;
         margin: 0 auto;
     }
+    
+      .main-menu .my-btn {
+        margin-left: 0px;
+      }
     
     
     

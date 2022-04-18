@@ -9,7 +9,7 @@ const SingleBlogDetails = ({blogData}) => {
         <div className="col-md-6 col-lg-4">
         <div className="single-blog mb-30">
             <div className="blog-img">
-                <NavLink to="single-blog.html"><img src="img/blog/blog1.jpg" alt=""/></NavLink>
+                <NavLink to="/blog"><img src={imgURL} alt=""/></NavLink>
             </div>
             <div className="blog-content">
                 <ul className="blog-meta">
@@ -17,7 +17,7 @@ const SingleBlogDetails = ({blogData}) => {
                    <li><NavLink to="/">{writer}</NavLink></li>
                    <li><NavLink to="/">{comment} comments</NavLink></li>
                 </ul>
-                <h3><NavLink to="single-blog.html">{title}</NavLink></h3>
+                <h3><NavLink to="/blog">{title}</NavLink></h3>
                 <p>{desc}</p>
             </div>
         </div>

@@ -42,11 +42,11 @@ const Navbar = () => {
 		        <li><NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="services">Services</NavLink></li>
 		        <li><NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="blog">Blog</NavLink></li>
                 {currentUser?.uid ? (
-          <button onClick={handleLogout} className='logout-button'>
+          <button onClick={handleLogout} className='my-btn'>
             Logout
           </button>
         ) : (
-            <button onClick={()=>navigate('/login')} className='logout-button'>
+            <button onClick={()=>navigate('/login')} className='my-btn'>
             Login
           </button> 
         )}

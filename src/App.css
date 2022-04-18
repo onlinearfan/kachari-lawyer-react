@@ -2871,3 +2871,44 @@ h4.small-title {
 .active-link{
 	color:#b99044!important;
 }
+
+.main-menu .my-btn {
+	margin-left: 55px;
+  }
+
+.my-btn {
+	display: inline-block;
+	background: #b99044;
+	color:#ffffff;
+	border: 1px solid #b99044;
+	padding: 6px 30px;
+  }
+.my-btn-border {
+	display: inline-block;
+	background: transparent;
+	color:#b99044;
+	border: 1px solid #b99044;
+	padding: 6px 30px;
+
+  }
+
+  .service-content .my-btn {
+	margin-top: 20px;
+  }
+
+  .request-quate-form .my-btn {
+	margin-bottom: 21px;
+  }
+  .price {
+	color: #000;
+	font-weight: 700;
+	font-size: 25px;
+	margin: 10px 0 5px;
+	display: inline-block;
+  }
+  .not-found {
+	text-align: center;
+	margin: 89px 0;
+	font-size: 70px;
+	color: #b99044;
+  }

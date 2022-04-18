@@ -164,20 +164,20 @@ const SignUpPage = () => {
 		                                </div>
 		                                <div className="col-md-12 col-lg-12">
 		                                    <div className="request-quate-form-style">
-                                            <button type="submit" className="btn">Sign up</button>
+                                            <button type="submit" className="my-btn">Sign up</button>
 		                                    </div>
 		                                </div>
 		                            </div>
 		                        </form>
                                 <div className="third-party-auth">
                                 <div className="col-md-12 col-lg-12">
-                                    <p>Already have an account? <button className='new-account' onClick={()=>navigate('/login')}>Login</button></p>
+                                    <p>Already have an account? <button className='my-btn-border ml-10 new-account' onClick={()=>navigate('/login')}>Login</button></p>
                                             <div className="or text-center">
                                                 <span>or</span>
                                             </div>
                                             <div className='third-party-auth'>
-                                                <button onClick={googleAuth} className='google btn-block'><i className="fa fa-google" aria-hidden="true"></i> Continue With Google</button>
-                                                <button onClick={githubAuth} className='github btn-block'><i className="fa fa-github" aria-hidden="true"></i> Continue With Github</button>
+                                                <button onClick={googleAuth} className='google btn-block my-btn-border'><i className="fa fa-google" aria-hidden="true"></i> Continue With Google</button>
+                                          
                                             </div>
 		                            </div>
                                 </div>

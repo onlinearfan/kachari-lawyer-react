@@ -102,7 +102,7 @@ const LoginPage = () => {
 		                    <div className="request-quate-title mb-55 text-center">
 		                        <h2>Login Form</h2>
 		                    </div>
-		                    <div className="request-quate-form">
+		                    <div className="request-quate-form login-from">
 		                        <form action="#" onSubmit={handleLogin}>
 		                            <div className="row">
                                     <div className="col-12">
@@ -119,21 +119,20 @@ const LoginPage = () => {
 		                                </div>
 		                                <div className="col-md-12 col-lg-12">
 		                                    <div className="request-quate-form-style">
-                                            <button onClick={handleLogin} type="submit" className="btn">Log In</button>
+                                            <button onClick={handleLogin} type="submit" className="my-btn">Log In</button>
 		                                    </div>
 		                                </div>
 		                            </div>
 		                        </form>
-                                <button onClick={handleResetPass} type="submit" className="btn">Forget Password</button>
+                                <button onClick={handleResetPass} type="submit" className="my-btn">Forget Password</button>
                                 <div className="third-party-auth">
                                 <div className="col-md-12 col-lg-12">
-                                <p>New To Kachari? <button className='new-account' onClick={()=>navigate('/signup')}>Create New Account</button></p>
+                                <p>New To Kachari? <button className='new-account my-btn-border ml-10' onClick={()=>navigate('/signup')}>Create New Account</button></p>
                                             <div className="or text-center">
                                                 <span>or</span>
                                             </div>
                                             <div className='third-party-auth'>
-                                                <button onClick={googleAuth} className='google btn-block'><i className="fa fa-google" aria-hidden="true"></i> Continue With Google</button>
-                                                <button className='github btn-block'><i className="fa fa-github" aria-hidden="true"></i> Continue With Github</button>
+                                                <button onClick={googleAuth} className='my-btn-border google btn-block'><i className="fa fa-google" aria-hidden="true"></i> Continue With Google</button>
                                             </div>
 		                            </div>
                                 </div>
