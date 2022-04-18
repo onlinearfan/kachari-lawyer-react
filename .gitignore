@@ -1,2 +1,6 @@
 node_modules
 kachari-html
+build
+.firebase
+firebase.json
+.firebaserc
