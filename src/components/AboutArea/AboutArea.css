@@ -1,0 +1,67 @@
+/*----------------------------------
+       5. About Area CSS
+------------------------------------*/
+.about-area {
+    margin-bottom: -295px;
+}
+.about-img {
+	left: -100px;
+	position: relative;
+}
+.about-img::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.3;
+}
+.about-img img{
+    width: 100%;
+}
+.about-img > a {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	color: #fafafa;
+	font-size: 60px;
+	line-height: 1;
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	margin-left: -30px;
+	margin-top: -30px;
+	line-height: 60px;
+}
+.about-img > a:hover{
+    animation: crSpinn 0.5s linear 0s 1 both;
+}
+.about-content {
+	margin-left: -60px;
+    padding-right: 120px;
+}
+.about-content > span {
+	font-size: 16px;
+	color: #c9c9c4;
+	line-height: 42px;
+}
+.about-content > h1 {
+	font-size: 36px;
+	color: #b99044;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.about-content > h5 {
+	font-size: 18px;
+	line-height: 36px;
+	color: #c9c9c4;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.about-content > p {
+	font-size: 16px;
+	line-height: 25px;
+	color: #cfcfcf;
+	margin-bottom: 30px;
+}

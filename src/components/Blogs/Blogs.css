@@ -1,0 +1,94 @@
+.blog-img {
+	overflow: hidden;
+}
+.blog-img img {
+	width: 100%;
+	transition: all 0.5s ease-in-out;
+}
+.single-blog:hover .blog-img img {
+	transform: scale(1.2);
+}
+.blog-meta {
+	margin-top: 25px;
+	margin-bottom: 7px;
+}
+.blog-meta > li {
+	display: inline-block;
+	list-style: none;
+	font-size: 13px;
+	line-height: 30px;
+	position: relative;
+	color: #757575;
+	font-weight: 600;
+	margin-right: 20px;
+	text-transform: uppercase;
+}
+.single-blog .blog-content .blog-meta > li::before {
+	content: "";
+	width: 5px;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	right: -14px;
+	z-index: 99;
+	background: #757575;
+}
+.single-blog .blog-content .blog-meta > li:last-child::before{
+    display: none;
+}
+.blog-meta > li > a {
+	color: #757575;
+	display: inline-block;
+}
+.blog-meta > li > a:hover{
+    color: #b99044;
+}
+.blog-content > h3 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	line-height: 32px;
+}
+.blog-content > p {
+	font-size: 16px;
+	line-height: 25px;
+	color: #606060;
+	margin-bottom: 0;
+	font-weight: 400;
+	max-width: 355px;
+}
+.blog-bottom-content p {
+	font-size: 16px;
+	color: #353535;
+	line-height: 25px;
+	margin-bottom: 5px;
+}
+.blog-content > a {
+	font-size: 14px;
+	display: inline-block;
+	line-height: 30px;
+	margin-top: 15px;
+	color: #636262;
+	font-family: Droid Serif;
+	font-weight: 700;
+	position: relative;
+}
+.blog-content > a::before {
+	position: absolute;
+	bottom: 5px;
+	content: "";
+	width: 100%;
+	height: 1px;
+	background-color: #bbb8b3;
+    transition: all 0.3s ease-in-out;
+}
+.blog-content > a > i {
+	font-size: 24px;
+	vertical-align: middle;
+}
+.blog-content > a:hover{
+    color: #b99044;
+}
+.blog-content > a:hover::before{
+    background-color: #b99044;
+}

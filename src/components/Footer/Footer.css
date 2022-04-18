@@ -1,0 +1,145 @@
+
+.footer-logo img {
+	margin-bottom: 20px;
+}
+.single-footer-widget > p {
+	font-size: 16px;
+	line-height: 25px;
+	color: #eaeaea;
+	margin-bottom: 25px;
+}
+.newslatter-title {
+	font-size: 18px;
+	color: #e2e2e2;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+.single-footer-widget form {
+	position: relative;
+	max-width: 300px;
+}
+.single-footer-widget form input {
+	border: 1px solid #555555;
+	font-size: 14px;
+	color: #f9f9f9;
+	line-height: 25px;
+	font-weight: 300;
+	height: 40px;
+	padding-right: 40px;
+}
+.single-footer-widget form input::-webkit-input-placeholder{
+    color: #f9f9f9;
+}
+.single-footer-widget form input::-moz-placeholder{
+    color: #f9f9f9;
+}
+.single-footer-widget form input:-ms-input-placeholder{
+    color: #f9f9f9;
+}
+.single-footer-widget form input::placeholder{
+    color: #f9f9f9;
+}
+.single-footer-widget form button {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: 0;
+	font-size: 16px;
+	color: #8f8e8e;
+	cursor: pointer;
+}
+.footer-menu {
+	padding-left: 55px;
+}
+.footer-title {
+	font-size: 22px;
+	color: #e2e2e2;
+	font-weight: 700;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+}
+.single-footer-widget ul > li {
+	list-style: none;
+}
+.single-footer-widget ul > li > a {
+	color: #eaeaea;
+	font-size: 14px;
+	text-transform: capitalize;
+	line-height: 26px;
+	transform: translateY(0);
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	display: block;
+	margin-bottom: 15px;
+	font-weight: 400;
+}
+.single-footer-widget ul > li > a:hover {
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+	color: #fff;
+}
+.footer-tweet > li {
+	font-size: 14px;
+	line-height: 23px;
+	color: #eaeaea;
+	padding-left: 35px;
+	position: relative;
+	margin-bottom: 25px;
+}
+.footer-tweet > li > p {
+	margin-bottom: 5px;
+	color: #eaeaea;
+}
+.footer-tweet > li > span > a{
+    color: #fff;
+    font-size: 14px;
+}
+.footer-tweet > li > span > a:hover{
+    color: #b99044;
+}
+.footer-tweet > li > p > a {
+	font-weight: 300;
+    font-size: 16px;
+    display: inline-block;
+	color: #b99044;
+}
+.footer-tweet > li::before {
+	position: absolute;
+	left: 0;
+	top: 2px;
+	content: "\ee34";
+	font-family: 'IcoFont';
+	color: #e2e2e2;
+	font-size: 24px;
+	display: block;
+}
+.single-footer-widget > p.contact-info > a {
+	font-size: 16px;
+	line-height: 25px;
+	color: #eaeaea;
+	display: block;
+}
+.single-footer-widget > p.contact-info > a:hover{
+    color: #fff;
+}
+
+.footer-bottom-area {
+	background-color: #272727;
+}
+.footer-bottom-area p {
+	font-size: 14px;
+	color: #e2e2e2;
+	line-height: 24px;
+	margin: 0;
+	font-weight: 400;
+}
+.footer-bottom-area p span {
+	color: #b99044;
+}
+.footer-bottom-area p a{
+    color: #b99044;
+}

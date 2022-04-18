@@ -1,4 +1,5 @@
 import React from 'react'
+import './WorkingWay.css'
 
 const WorkingWay = () => {
     return (

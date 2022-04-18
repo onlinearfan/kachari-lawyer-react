@@ -12,6 +12,7 @@ import Header from "./components/Header/Header";
 import RequiredAuth from "./RequiredAuth";
 
 import "./App.css";
+import "./css/Default.css"
 import ServicePage from "./pages/ServicePage/ServicePage";
 import './css/responsive.css'
 import Footer from "./components/Footer/Footer";

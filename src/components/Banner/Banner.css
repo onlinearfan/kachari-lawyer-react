@@ -1,0 +1,44 @@
+/*----------------------------------
+       3. Slider Area CSS
+------------------------------------*/
+.single-slider {
+    /* background-image: url(img/slider/slider-bg.jpg); */
+	background-color: gray;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+    overflow: hidden;
+}
+.hero-content > .title > h1 {
+	font-size: 55px;
+	color: #b99044;
+	font-weight: 700;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.hero-content > .title > h2 {
+	color: #b99044;
+	font-size: 28px;
+	font-weight: 400;
+    margin-bottom: 0;
+}
+.hero-content > .description > p {
+	margin-top: 40px;
+	font-size: 18px;
+	color: #fff;
+	line-height: 30px;
+	font-weight: 300;
+    margin-bottom: 0px;
+}
+.hero-content > a {
+	font-size: 20px;
+	color: #b99044;
+	font-weight: 700;
+	font-family: Droid Serif;
+	text-decoration: underline;
+	margin-top: 60px;
+	display: inline-block;
+}
+.hero-img img {
+	width: auto;
+}

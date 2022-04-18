@@ -1,0 +1,50 @@
+/*----------------------------------
+       6. Timeline Area CSS
+------------------------------------*/
+.timeline-area {
+	padding: 375px 0 80px;
+}
+.timeline-frame {
+	/* background-image: url(img/time-line-frame/frame1.png); */
+	/* background-color: #333; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex: 0 0 96px;
+}
+.timeline-content {
+	margin-left: 20px;
+}
+.timeline-frame > h3 {
+	font-size: 24px;
+	text-align: center;
+	margin: 30px 0;
+	font-weight: 600;
+}
+.timeline-frame > h3 > span {
+	font-size: 13px;
+	display: block;
+	line-height: 17px;
+	margin-top: 5px;
+}
+.timeline-content > h4 {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.timeline-content > p {
+	font-size: 16px;
+	line-height: 25px;
+	color: #606060;
+	margin: 0;
+	max-width: 205px;
+	font-weight: 400;
+}
+.view-all-history > a {
+	font-size: 14px;
+	font-weight: 700;
+	font-family: Droid Serif;
+	color: #b99044;
+	text-align: center;
+	display: block;
+	text-decoration: underline;
+}

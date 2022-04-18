@@ -1,0 +1,35 @@
+/*----------------------------------
+       4. Feature Area CSS
+------------------------------------*/
+.feature-section-title {
+	position: relative;
+}
+.feature-section-title::before {
+	/* content: url(img/bg/bg2.jpg); */
+	position: absolute;
+	top: 50%;
+	left: -65px;
+	z-index: -1;
+	transform: translateY(-50%);
+}
+.single-feature {
+	padding-left: 55px;
+	margin: 22px 0;
+}
+.single-feature:hover > h2{
+    color: #b99044;
+}
+.single-feature > h2 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: ;
+	margin-bottom: 15px;
+	transition: all 0.3s ease-in-out;
+}
+.single-feature > p {
+	font-size: 16px;
+	line-height: 25px;
+	color: #606060;
+	font-weight: 400;
+}
+

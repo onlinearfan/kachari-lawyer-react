@@ -1,6 +1,7 @@
 import React from 'react'
 import SingleService from './SingleService/SingleService'
 import serviceData from '../../fakeData/service-data'
+import './Services.css'
 
 const Services = () => {
     return (

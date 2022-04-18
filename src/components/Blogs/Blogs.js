@@ -1,6 +1,7 @@
 import React from 'react'
 import SingleBlogDetails from './SingleBlogDetails/SingleBlogDetails'
 import blogsData from '../../fakeData/blogs-data'
+import './Blogs.css'
 
 const Blogs = () => {
     return (

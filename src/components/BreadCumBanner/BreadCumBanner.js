@@ -1,4 +1,5 @@
 import React from "react";
+import './BreadCumBanner.css'
 
 const BreadCumBanner = ({ BreadcumData }) => {
     return (

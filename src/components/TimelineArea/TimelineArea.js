@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import TimelineBox from './TimelineBox/TimelineBox'
 import timelineData from '../../fakeData/timeline-data'
+import './TimelineArea.css'
 
 const TimelineArea = () => {
 	console.log(timelineData);

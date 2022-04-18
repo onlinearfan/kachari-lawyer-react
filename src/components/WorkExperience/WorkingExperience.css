@@ -1,0 +1,19 @@
+.justify-content-between > .col {
+	width: auto;
+	flex: 0 0 auto;
+	text-align: center;
+}
+.col.fun-factor-wrap > h2 {
+	margin-bottom: 0;
+}
+.fun-factor-wrap > h2 > span {
+	font-size: 38px;
+	font-weight: 700;
+}
+.fun-factor-wrap > span {
+	font-size: 18px;
+	font-weight: 700;
+	color: #303030;
+	font-family: Droid Serif;
+	text-transform: capitalize;
+}

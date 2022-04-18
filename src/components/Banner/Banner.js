@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import bannerData from '../../fakeData/banner-data'
+import './Banner.css'
 
 const Banner = () => {
 

@@ -1,0 +1,116 @@
+/*----------------------------------
+       2.1 Header Top CSS
+------------------------------------*/
+.header-top-right {
+	text-align: right;
+}
+.header-top-left > p,
+.header-top-right > p{
+	margin: 0;
+	color: #b99044;
+	font-size: 17px;
+	text-transform: uppercase;
+	line-height: 35px;
+    font-weight: 500;
+}
+.header-top-left > p > a, 
+.header-top-right > p > a {
+	color: #b99044;
+	display: inline-block;
+	text-transform: none;
+	margin-left: 8px;
+}
+
+
+/*----------------------------------
+       2.2 Header Bottom CSS
+------------------------------------*/
+.header-bottom-area {
+	padding-top: 15px;
+}
+.header-logo > a {
+	display: block;
+	margin: 15px 0;
+}
+.main-menu > li {
+	display: inline-block;
+	list-style: none;
+    position: relative;
+}
+.main-menu > li:last-child a{
+    padding-right: 0;
+}
+.main-menu > li > a {
+	display: block;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 40px 17px;
+	color: #373537;
+	line-height: 30px;
+}
+.main-menu > li > a:last-child{
+    padding-right: 0px;
+}
+.main-menu > li.active > a,
+.main-menu > li:hover > a {
+	color: #b99044;
+}
+.main-menu > li > ul {
+	background: #fff none repeat scroll 0 0;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+	display: block;
+	left: 0px;
+	opacity: 0;
+	padding: 25px 0px 27px;
+	position: absolute;
+	text-align: left;
+	top: 120%;
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 200px;
+	z-index: 999;
+}
+.main-menu > li:nth-last-child(1) > ul,
+.main-menu > li:nth-last-child(2) > ul{
+    left: auto;
+    right: 0;
+}
+.main-menu > li:hover > ul {
+	opacity: 1;
+	top: 100%;
+	visibility: visible;
+}
+.main-menu > li > ul > li {
+	display: block;
+	padding: 0 18px;
+	position: relative;
+}
+.main-menu > li > ul > li > a {
+	color: #373537;
+	display: block;
+	font-weight: 400;
+	letter-spacing: 0.8px;
+	line-height: 32px;
+	text-transform: capitalize;
+	font-size: 15px;
+}
+.main-menu > li > ul > li > a::before {
+	background: #b99044 none repeat scroll 0 0;
+	content: "";
+	height: 7px;
+	left: 15px;
+	opacity: 0;
+	position: absolute;
+	top: 14px;
+	transition: all 0.3s ease-in-out 0s;
+	width: 7px;
+	border-radius: 50%;
+	z-index: 999;
+}
+.main-menu > li > ul > li:hover > a::before {
+	opacity: 1;
+}
+.main-menu > li > ul > li:hover > a {
+	padding-left: 15px;
+    color: #b99044;
+}
