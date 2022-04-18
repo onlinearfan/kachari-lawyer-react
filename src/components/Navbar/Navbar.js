@@ -39,6 +39,7 @@ const Navbar = () => {
 		    <ul className="main-menu">
 		        <li><NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="/">HOME</NavLink></li>
 		        <li><NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="about">About</NavLink></li>
+		        <li><NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="services">Services</NavLink></li>
 		        <li><NavLink className={({ isActive }) => (isActive ? "active-link" : "link")} to="blog">Blog</NavLink></li>
                 {currentUser?.uid ? (
           <button onClick={handleLogout} className='logout-button'>

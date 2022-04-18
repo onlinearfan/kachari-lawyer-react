@@ -16,3 +16,36 @@ lorem ipsu don't use, readme te website features describe,(name,link,bullet,ki k
 *)home page must responsive,
 *)error for email pass 
 *)add link reset pass toast
+
+
+work left :
+-------------------
+not done :
+-)Clicking on the button will take the user to the Checkout route. This route will be private/protected routes. Please make sure that the private route redirects to the login page if the user is not logged in. After login, the user will be redirected to the checkout page
+-)If you reload the protected/private route (after login), this page will not redirect the user to the login page. Instead, it will keep the logged-in user on the protected route.
+
+
+
+-)A website for an individual (done):
+-)design and website idea (done)
+-)Give your website a name. (done)
+-)Home page will have a header (simple navbar), banner, services section, and a footer.(done)
+-) One extra section (done)
+-)The Services section will have at least 3 services. name, price, image, short description, and a specific button.(done)
+-)Clicking on the button will take the user to the Checkout route
+-)You can put anything on the checkout page(done)
+-)mplement Email-password based authentication. implement the Registration and the login page. oggle between Login and Registration view field a required field..(done)
+-)one extra login, which could be (facebook, github, google, etc).(done)
+-)Once logged in, the log out/sign out button should appear on the header, which will log out the user once clicked.(done)
+
+-)Add two more routes. one route will be blogs. On the blog page, you will need to answer these three questions. This won't be a protected route
+(done)
+13.1 Difference between authorization and authentication
+
+13.2 Why are you using firebase? What other options do you have to implement authentication?
+
+13.3 What other services does firebase provide other than authentication
+
+-)You will create an about me page. It could be the about route,put your name and your imag, write a small paragraph (3-5 lines) about your goal,(falf done)
+-) 9 meaningful git commit(done)
+-)Create a 404 page (not found page)(done)
