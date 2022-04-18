@@ -6,8 +6,8 @@ const BreadCumBanner = ({ BreadcumData }) => {
             <div className="container">
                 <div className="row">
                     <div className="page-banner-content col-12 text-center">
-                        <h2>{BreadcumData.title}</h2>
-                        <p>{BreadcumData.desc}</p>
+                        <h2>{BreadcumData?.title}</h2>
+                        <p>{BreadcumData?.desc}</p>
                     </div>
                 </div>
             </div>

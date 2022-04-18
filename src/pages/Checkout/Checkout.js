@@ -71,7 +71,7 @@ const Checkout = () => {
 		                            {/* <!--Section Title Start--> */}
                                     <div className="section-title mb-40">
                                        <img src="img/icon/icon1.png" alt=""/>
-                                        <h4>Buying Product Details</h4>
+                                        <h4>Ordering Service Details</h4>
                                         <h2>{checkoutProduct?.title}</h2>
 										<span>Price: {checkoutProduct?.price}</span>
                                         <p>{checkoutProduct?.desc}</p>

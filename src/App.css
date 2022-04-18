@@ -712,8 +712,6 @@ textarea:focus {
  .bg-opacity-white-90:before {  background: rgba(255, 255, 255, 0.9);}
 /*Background Image*/
 .bg-img {
-	/* background-image: url(img/bg/bg.jpg); */
-	background-color: #333;
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1250,7 +1248,7 @@ Common Style CSS
 }
 .timeline-frame {
 	/* background-image: url(img/time-line-frame/frame1.png); */
-	background-color: #333;
+	/* background-color: #333; */
 	background-repeat: no-repeat;
 	background-size: cover;
 	flex: 0 0 96px;

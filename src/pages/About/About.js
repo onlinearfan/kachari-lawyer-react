@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
+import AboutArea from "../../components/AboutArea/AboutArea";
+import TimelineArea from "../../components/TimelineArea/TimelineArea";
 
 const About = () => {
-    return (
-        <div>
-            <h1>About Page</h1>
-        </div>
-    )
-}
 
-export default About
+
+    return (
+        <>
+            <AboutArea/>
+            <TimelineArea/>
+        </>
+    );
+};
+
+export default About;

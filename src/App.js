@@ -13,7 +13,8 @@ import RequiredAuth from "./RequiredAuth";
 
 import "./App.css";
 import ServicePage from "./pages/ServicePage/ServicePage";
-// import './css/responsive.css'
+import './css/responsive.css'
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
     return (
@@ -38,6 +39,7 @@ const App = () => {
                 <Route path="signup" element={<SignUpPage />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
+            <Footer/>
         </>
     );
 };

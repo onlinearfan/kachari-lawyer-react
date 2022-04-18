@@ -6,7 +6,9 @@ import timelineData from '../../fakeData/timeline-data'
 const TimelineArea = () => {
 	console.log(timelineData);
     return (
-        <div className="timeline-area bg-img">
+        <div className="timeline-area bg-img" style={{
+			backgroundImage:`url(img/bg/bg.jpg})`,                    
+		}}>
 		    <div className="container">
 		        <div className="row">
 					{

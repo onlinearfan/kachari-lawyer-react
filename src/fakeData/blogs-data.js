@@ -6,7 +6,7 @@ const blogsData = [
         imgURL:'img/blog/blog1.jpg',
         writer:'Arfan Khan',
         comment:12,
-        Date:'FEBRUARY 10'
+        date:'FEBRUARY 10'
     },
     {
         id:2,
@@ -15,7 +15,7 @@ const blogsData = [
         imgURL:'img/blog/blog2.jpg',
         writer:'Arfan Khan',
         comment:12,
-        Date:'FEBRUARY 10'
+        date:'FEBRUARY 10'
     },
     {
         id:3,
@@ -24,7 +24,7 @@ const blogsData = [
         imgURL:'img/blog/blog3.jpg',
         writer:'Arfan Khan',
         comment:12,
-        Date:'FEBRUARY 10'
+        date:'FEBRUARY 10'
     },
 ]
 

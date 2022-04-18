@@ -1,6 +1,6 @@
 import React from "react";
 
-const SectionTitle = () => {
+const SectionTitle = ({sectionTitle}) => {
     return (
         <div className="section-title text-center mb-70">
             <img src="img/icon/icon1.png" alt="" />

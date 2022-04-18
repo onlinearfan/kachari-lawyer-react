@@ -1,10 +1,9 @@
 import React from 'react'
+import Blogs from '../../components/Blogs/Blogs'
 
 const BlogPage = () => {
     return (
-        <div>
-            <h1>BlogPage Page</h1>
-        </div>
+        <Blogs/>
     )
 }
 

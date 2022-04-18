@@ -1,4 +1,6 @@
 import React from 'react'
+import SingleBlogDetails from './SingleBlogDetails/SingleBlogDetails'
+import blogsData from '../../fakeData/blogs-data'
 
 const Blogs = () => {
     return (
@@ -17,63 +19,9 @@ const Blogs = () => {
 		            </div>
 		        </div>
 		        <div className="row">
-		            {/* <!--Single Blog Start--> */}
-		            <div className="col-md-6 col-lg-4">
-                        <div className="single-blog mb-30">
-                            <div className="blog-img">
-                                <a href="single-blog.html"><img src="img/blog/blog1.jpg" alt=""/></a>
-                            </div>
-                            <div className="blog-content">
-                                <ul className="blog-meta">
-                                   <li>February 10</li> 
-                                   <li><a href="#"> jeshon smith.</a></li>
-                                   <li><a href="#">12 comments</a></li>
-                                </ul>
-                                <h3><a href="single-blog.html">Seminer on Corporate Law for Smooth Business</a></h3>
-                                <p>Lawyer boluptatum deleniti atque corrupti sdolores et quas molestias cepturi sint  eca itate non similique sunt in culpa modi tempora incidunt</p>
-                                <a href="single-blog.html"><span>Continue Reading</span> <i className="icofont icofont-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-		            </div>
-		            {/* <!--Single Blog End--> */}
-		            {/* <!--Single Blog Start--> */}
-		            <div className="col-md-6 col-lg-4">
-                        <div className="single-blog mb-30">
-                            <div className="blog-img">
-                                <a href="single-blog.html"><img src="img/blog/blog2.jpg" alt=""/></a>
-                            </div>
-                            <div className="blog-content">
-                                <ul className="blog-meta">
-                                   <li>February 10</li> 
-                                   <li><a href="#"> jeshon smith.</a></li>
-                                   <li><a href="#">12 comments</a></li>
-                                </ul>
-                                <h3><a href="single-blog.html">Divorce is not the only way for happy Life</a></h3>
-                                <p>Lawyer boluptatum deleniti atque corrupti sdolores et quas molestias cepturi sint  eca itate non similique sunt in culpa modi tempora incidunt</p>
-                                <a href="single-blog.html"><span>Continue Reading</span> <i className="icofont icofont-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-		            </div>
-		            {/* <!--Single Blog End--> */}
-		            {/* <!--Single Blog Start--> */}
-		            <div className="col-md-6 col-lg-4">
-                        <div className="single-blog mb-30">
-                            <div className="blog-img">
-                                <a href="single-blog.html"><img src="img/blog/blog3.jpg" alt=""/></a>
-                            </div>
-                            <div className="blog-content">
-                                <ul className="blog-meta">
-                                   <li>February 10</li> 
-                                   <li><a href="#"> jeshon smith.</a></li>
-                                   <li><a href="#">12 comments</a></li>
-                                </ul>
-                                <h3><a href="single-blog.html">Learn about Investment Law to make it simple</a></h3>
-                                <p>Lawyer boluptatum deleniti atque corrupti sdolores et quas molestias cepturi sint  eca itate non similique sunt in culpa modi tempora incidunt</p>
-                                <a href="single-blog.html"><span>Continue Reading</span> <i className="icofont icofont-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-		            </div>
-		            {/* <!--Single Blog End--> */}
+                    {blogsData.map((singleData)=><SingleBlogDetails key={singleData.id} blogData={singleData}/>)}
+		           
+	
 		        </div>
 		    </div>
 		</div>

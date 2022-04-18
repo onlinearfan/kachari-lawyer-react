@@ -22,7 +22,7 @@ const AboutArea = () => {
                                         <span>20 years of experience</span>
                                         <h1>Hay! Here is Robert Jackson</h1>
                                         <h5>Professional &amp; Experienced Lawyer</h5>
-                                        <p>Lawyer boluptatum deleniti atque corrupti quos dolores et quas molestias  epturi sint  eca iditate non provident, similique sunt in culpa modi tempora incidunt ut labore et dolor am aerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam poris suscipit modi tempora incidunt </p>
+                                        <p>Lawyer soothes and soothes those who are corrupted by the pains and annoyances which they will enjoy, and in the same manner they do not foresee what pains they will enjoy; For the slightest excuse that any one of us undertakes any exercise such as fall times</p>
                                         <div className="author-signeture">
                                             <img src="img/about/signeture.png" alt=""/>
                                         </div>

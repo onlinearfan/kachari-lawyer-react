@@ -10,7 +10,7 @@ const WorkingWay = () => {
                         <div className="section-title text-center mb-70">
                            <img src="img/icon/icon1.png" alt=""/>
                             <h4>Wroking Process</h4>
-                            <h2>Our Working Way</h2>
+                            <h2>My Working Way</h2>
                             <p>Lawyer boluptatum deleniti atque corrupti quos dolores et quas molestias cepturi sint  eca itate non provident, similique sunt in culpa modi tempora incidunt ut labore et dolor am aerat</p>
                         </div>
                         {/* <!--Section Title End--> */}
